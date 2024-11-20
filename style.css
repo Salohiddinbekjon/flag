@@ -1,0 +1,110 @@
+/* Universal style */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #202c36;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* Header style */
+header {
+    background-color: #283844;
+    padding: 20 0;
+}
+
+header h1 {
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+header button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Countires style */
+.countries form {
+    margin: 40 0;
+}
+
+.countries input {
+    background-color: #283844;
+    border: none;
+    padding: 15 10;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.countries .flag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.countries .country {
+    width: 23%;
+    background-color: #283844;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+
+.countries img {
+    width: 100%;
+}   
+
+.countries h3 {
+    color: white;
+    text-align: center; 
+}
+
+
+@media (max-width: 576px) {
+
+    /* Countries */
+    .countries form {
+        width: 98%;
+        margin: 20 auto;
+    }
+
+    .countries input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .countries .flag {
+        justify-content: center;
+    }
+}
+
+
+/* Table */
+@media (min-width: 768px)  and (max-width: 1199px) {
+    .countries .country {
+        width: 45%;
+    }
+
+    .countries form {
+        width: 98%;
+        margin: 38px auto;
+    }   
+
+    .countries input {
+        width: 100%;
+        box-sizing: border-box  ;
+    }
+}
